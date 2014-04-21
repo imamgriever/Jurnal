@@ -4,14 +4,14 @@ public class Fibonaci
     public static void main(String args[]) {
 
     }
-		public int x, y, z, i;
+		public int x, y, z, i, jum;
 		Scanner scan = new Scanner(System.in);
 		x = scan.NextInt();
 		for(i=0; i<=x; i++)
 		{	
-			y = count(x);
-			System.out.println(x);
+			jum = jum + count(x);
 		}
+		System.out.println(jum);
 			
 		public static int count(int x)
 		{
