@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class Fibonaci	
+{
+    public static void main(String args[]) {
+
+    }
+		public int x, y, z, i;
+		Scanner scan = new Scanner(System.in);
+		x = scan.NextInt();
+		for(i=0; i<=x; i++)
+		{	
+			y = count(x);
+			System.out.println(x);
+		}
+			
+		public static int count(int x)
+		{
+			int n;
+			if(x==0)
+				return 0;
+			if(x==1)
+				return 1;
+			else
+				n = count(x-1) + count(x-2);
+			return n;
+		}
+	
+    
+}
